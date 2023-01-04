@@ -1,0 +1,108 @@
+
+footer {
+    background-color: #615190;
+
+    .footer-content {
+        width: 95%;
+        margin: auto;
+        padding: 20px;
+
+        .footer-section {
+            display: flex;
+            justify-content: space-between;
+            height: 71px;
+            width: 100%;
+            align-items: center;
+            padding: 0 20px;
+
+            &.footer-top {
+                border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+            }
+
+            .links-cont {
+                a {
+                    color: #fff;
+                    margin: 0 0 0 45px;
+                    text-decoration: none;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+            .rrss-cont {
+                display: flex;
+                align-items: center;
+
+                a {
+                    margin: 0 0 0 30px;
+
+                    &:nth-child(2) {
+                        margin-top: 2px;
+                    }
+
+                    &:hover {
+                        img {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    footer {
+    padding: 20px 0;
+        .footer-content {
+          
+    
+            .footer-section {
+             
+                height: auto;
+                justify-content: center;
+                flex-direction: column;
+                padding:0;
+    
+                &.footer-top {
+                    border-bottom: 1px solid rgba($color: #fff, $alpha: 0.5);
+                }
+
+                &.footer-bottom{
+                    p{
+                        margin: 40px 0 40px 0;
+                    }
+                }
+    
+                .links-cont {
+                    margin: 40px 0 40px 0;
+                    width: 80%;
+                    display: flex;
+                    justify-content: space-evenly;
+
+                    a{
+                        margin: 0;
+                    }
+                   
+                }
+                .rrss-cont {
+                    display: flex;
+                    align-items: center;
+
+                    
+    
+                  
+                }
+    
+            }
+        }
+    }
+}
+

@@ -1,0 +1,37 @@
+
+.intro-cont {
+    padding: 270px 0 120px 0;
+    max-width: 1075px;
+    width: 80%;
+    margin: auto;
+    font-weight: 800;
+    font-family: RobotoMedium;
+    p {
+        line-height: 22px;
+        margin-top: 0.5em;
+    }
+
+    h3 {
+        color: #413f48;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    .intro-cont{
+        padding: 120px 0 100px 0;
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+    .intro-cont{
+        padding: 120px 0 50px 0;
+    }
+
+}
+
+
