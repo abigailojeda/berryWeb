@@ -1,8 +1,9 @@
 <header class="header-cont">
 
     <div class="header-content">
-    <div class="header-left-cont">
         <img class="logo" [src]="logoWhite" alt="">
+    <div class="header-left-cont">
+        
         <img class="illustration" [src]="headerIllustration" alt="">
     </div>
 
@@ -23,25 +24,54 @@
 
 <div class="info-cont">
     <div class="info-content">
-
+        <img class="logo" [src]="taskIcon" alt="">
+        <h4>Lorem Ipsum</h4>
     </div>
     <div class="info-content">
-
+        <img class="logo" [src]="userIcon" alt="">
+        <h4>Lorem Ipsum</h4>
     </div>
     <div class="info-content">
-
+        <img class="logo" [src]="partyIcon" alt="">
+        <h4>Lorem Ipsum</h4>
     </div>
+
 </div>
 
 <div class="contact-cont">
 
     <div class="contact-content">
         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing!</h1>
-    <img class="illustration" [src]="footerIllustration" alt="">
+        <img class="illustration" [src]="footerIllustration" alt="">
     </div>
 
 
 </div>
 <footer>
+    <div class="footer-content">
+        <div class="footer-top footer-section">
+            <img class="logo" [src]="logoWhite" alt="">
+           <div class="links-cont">
+            <a [routerLink]="['']">link</a>
+            <a [routerLink]="['']">link</a>
+            <a [routerLink]="['']">link</a>
+           </div>
+        </div>
+        <div class="footer-bottom footer-section">
+            <p>&copy; Abigail Ojeda Alonso - 2023</p>
+            <div class="rrss-cont">
+                <a [routerLink]="['']">
+                    <img class="logo" [src]="logoFacebook" alt="">
+                </a>
+                <a [routerLink]="['']">
+                    <img class="logo" [src]="logoDiscord" alt="">
+                </a>
+                <a href="https://es.linkedin.com/in/abigail-ojeda" target="_blank">
+                    <img class="logo" [src]="logoLinkedin" alt="">
+                </a>
+               
+            </div>
+        </div>
+    </div>
     
 </footer>
