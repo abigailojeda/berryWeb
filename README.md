@@ -1,27 +1,107 @@
-# Berryweb
+# 📋 Berry App 🍇🍒  
+Berry is an app of the MEAN Stack tack.
+starting from the idea of the to do list I wanted to apply it to the scrum style, inspired by trello and jira.  
+The functionality is a crud of projects, categories and tasks, which can have objectives and tags.  
+➜ Demo:
+[Landing Page](https://berryweb.netlify.app/home)  
+[App](https://berry-app.netlify.app/user/login)  
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.1.
 
-## Development server
+---
+➜ [Design in progress in Figma](https://www.figma.com/file/2hSVjy3OUFsHX7uPmyyXDn/Berry)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+![](screenshots/mockup.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+---  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 📂  What do you need to have installed on your computer?
 
-## Running unit tests
+➜ Node [LTS Version](https://nodejs.org/en/)  
+➜ Angular: npm install -g @angular/cli
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+---
+### 📚  This project use:
 
-## Running end-to-end tests
+## FRONTEND  
+I have developed the frontend with [Angular](https://angular.io/) v14   
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+➜  Lazy loading modules  
+➜  RxJS   
+➜  Models/Interfaces
+➜  Pipes  
 
-## Further help
+➜ [Drag Scroll library](https://www.npmjs.com/package/ngx-drag-scroll)  
+  
+➜ [FrontEnd Repo](https://github.com/abigailojeda/berryApp)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## BACKEND
+For this project I have built an API node, using [Express](https://expressjs.com/es/4x/api.html) for requests,  
+[Mongoose](https://mongoosejs.com/) to connect to mongo database, [bcryptjs](https://www.npmjs.com/package/bcryptjs) and and for authentication [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)  
+  
+➜ [Node BackEnd Repo](https://github.com/abigailojeda/berryBack)
+
+
+## BONUS
+I have also created a landing page in whose development I enjoyed with the [AOS](https://michalsnik.github.io/aos/) on scroll animation library  
+
+---
+
+#### 👨‍🚀 check POSTMAN endpoints 
+
+[Run in Postman](https://documenter.getpostman.com/view/18449118/2s8ZDSckcq)  
+  
+IMPORTANT:  
+This app use authentification, so you need a token to try this endpoints.  
+To get the token, you only need to:  
+- Run app  
+- Create an user or Login
+- Check localstorage, and there you will find the token  
+
+![](screenshots/postmantoken.png)
+
+
+## ⚙️ Project Settings
+
+### backend
+To test the backend locally:  
+
+➜ npm install
+
+IMPORTANT:
+First, create a database in [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and establish the connection in [MongoDBCompass](https://www.mongodb.com/products/compass)  
+
+You need to create a .env file for configuration:
+```javascript
+PORT = yourLocalPort
+SECRET_JWT_SEED=aSecretYouDecideToWrite
+BD_CNN=mongodb+srv://yourUriOnMongoDBCompass:
+
+```
+
+![](screenshots/compass.png)
+
+
+### frontend
+In the frontend folder( cd frontend),  install the dependencies:
+➜ npm install
+
+
+## 🔎 what will you find in Berry app?  
+
+### ➜ Create & Delete Project
+
+![](screenshots/projectsView.png)
+### ➜ Create & Delete Categories  
+
+![](screenshots/categories.png)
+### ➜ Create, Update & Delete Tasks  
+
+![](screenshots/tasks.png)
+
+
+---
+ 🙋🏻‍♀️ [Abigail Ojeda Alonso](https://es.linkedin.com/in/abigail-ojeda)
+
